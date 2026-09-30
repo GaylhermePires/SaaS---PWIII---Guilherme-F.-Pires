@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Tarefas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <div>
+                <h1>Minhas Tarefas</h1>
+                <p>Organize seu dia de um jeito simples.</p>
+            </div>
+
+            <div class="contador">
+                <strong id="total">0</strong>
+                <span>tarefas</span>
+            </div>
+        </header>
+
+        <section class="adicionar">
+            <input
+                type="text"
+                id="inputTarefa"
+                placeholder="Digite uma tarefa..."
+            >
+
+            <button id="btnAdicionar">Adicionar</button>
+        </section>
+
+        <nav class="filtros">
+            <button class="filtro ativo" data-filtro="todas">
+                Todas
+            </button>
+
+            <button class="filtro" data-filtro="pendentes">
+                Pendentes
+            </button>
+
+            <button class="filtro" data-filtro="concluidas">
+                Concluídas
+            </button>
+        </nav>
+
+        <main id="listaTarefas"></main>
+
+        <div id="mensagemVazia" class="vazio">
+            <div class="icone">✓</div>
+            <h2>Nenhuma tarefa aqui</h2>
+            <p>Adicione uma tarefa para começar.</p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
